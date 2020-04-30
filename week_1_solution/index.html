@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="Assignment1">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div align="center" width="80%" ng-controller="LunchCheckController">
+      <!--- I considered the empty space in ex: item 1, item2,,item3 as an item, so i would get 4 items as per the example --> 
+      <input type="text" style="width: 300px; margin-top:50px; margin-bottom:5px" placeholder="Enter comma seperated items" ng-model="inputText">
+      <button type="button" class="btn btn-primary btn-sm" name="Click if Too Much" ng-click="checkIfTooMuch()">Click if Too Much</button>
+      <h4 style="text-align:center;">{{message}}</h4>
+    </div>
+  </body>
+</html>
